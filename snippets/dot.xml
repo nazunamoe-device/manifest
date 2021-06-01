@@ -8,6 +8,10 @@
           fetch="https://github.com/DotOS/"
           review="https://review.droidontime.com/"
           revision="refs/heads/dot11" />
+          
+  <remote name="nazunamoe"
+          fetch="https://github.com/nazunamoe-device/"
+          revision="refs/heads/dot11" />
   
   <remote name="dot-gitlab"
           fetch="http://gitlab.com/dotos-official/"
@@ -27,7 +31,7 @@
           revision="refs/heads/dot11" />
 
   <project path="art" name="android_art" remote="dot" />
-  <project path="manifest" name="manifest" remote="dot" />
+  <project path="manifest" name="manifest" remote="nazunamoe" />
   <project path="bionic" name="android_bionic" remote="dot" />
   <project path="bootable/recovery" name="android_bootable_recovery" remote="dot" />
 
@@ -56,7 +60,7 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="dot" />
 
   <!-- Dot Repos -->
-  <project path="vendor/dot" name="android_vendor_dot" remote="dot" />
+  <project path="vendor/dot" name="android_vendor_dot" remote="nazunamoe" />
   <project path="vendor/support" name="android_vendor_support" remote="dot" />
   <project path="vendor/gms" name="android_vendor_gms" remote="dot-gitlab" />
   <project path="device/dot/sepolicy" name="android_device_dot_sepolicy" remote="dot" />
